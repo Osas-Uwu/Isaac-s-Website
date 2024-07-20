@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+ <header class="banner">
+    <h1>Isaac</h1>
+    <img id="passport2" src="../Isaac/src/images/Isaac.JPG" alt="[Child's Name]'s Profile Picture">
+  </header>
+  <main>
+    <section class="about-me">
+      <h2>About Me</h2>
+      <p>Hi! I'm Isaac, and I'm 11 years old. I love reading, getting involved in meaningful activities, and making friends .</p>
+
+      <div class="upload">
+        <h3>Upload Your Photo!</h3>
+        <input type="file" id="passport-upload" accept="image/*">
+        <p>This photo will appear next to your name.</p>                                
+      </div>
+    </section>
+    <section class="school">
+      <h2>My School</h2>
+      <p>I go to Trillium MD school in about to leave JSS 1. Here are some things I love about my school:</p>
+      <ul>
+        <li>Enabling environment for learning</li>
+        <li>Great teachers</li>
+        <li>Sound and up to date curricullum</li>
+        <li>My friends</li>
+      </ul>
+      <div class="swiper-container">  
+        <div class="swiper-wrapper">
+          <img src="../Isaac/src/images/class photo.jpg" alt="Image 1">
+          <img src="../Isaac/src/images/class showmore.jpg" alt="Image 1">
+          <img src="../Isaac/src/images/Isaac.JPG" alt="Image 1">
+          <img src="../Isaac/src/images/class photo.jpg" alt="Image 1">
+          <img src="../Isaac/src/images/class showmore.jpg" alt="Image 1">
+          <img src="../Isaac/src/images/Isaac.JPG" alt="Image 1">
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <button onclick="showMore()">Show More Images!</button>
+    </section>    
+  </main>
+  <script src="https://unpkg.c om/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
